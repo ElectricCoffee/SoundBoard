@@ -8,13 +8,17 @@ function mkAudioTag(url: string): HTMLAudioElement {
     return audio; 
 }
 
+function range(n: number): number[] {
+    return [...Array(n).keys()];
+}
+
 const div = document.getElementById("sound-board");
 const table = document.createElement("table");
 
 for (let wd of data) {
     let tr = document.createElement("tr");
 
-    for (let col = 0; col < 2; col++) {
+    for (let col of range(2)) {
         let td = document.createElement("td");
         
         if (col === 0) {
