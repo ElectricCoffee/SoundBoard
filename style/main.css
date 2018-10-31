@@ -16,7 +16,7 @@ audio {
     grid-template-columns: auto auto;
 }
 
-.inline {
+.grid-row {
     display: inline;
     margin: 5px;
 }

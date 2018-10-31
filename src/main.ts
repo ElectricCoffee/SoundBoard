@@ -27,7 +27,7 @@ function mkLink(url: string): HTMLAnchorElement {
 
 for (let wd of data) {
     let row = document.createElement("div");
-    row.className = "inline";
+    row.className = "grid-row";
     
     let span = document.createElement("span");
     span.innerText = wd.text;
