@@ -2,6 +2,10 @@ html {
     font-family: 'Fira Sans', sans-serif;
 }
 
+audio {
+    width: 30%;
+}
+
 .center {
     text-align: center;
 }
@@ -14,6 +18,7 @@ html {
 
 .inline {
     display: inline;
+    margin: 5px;
 }
 
 .text {
