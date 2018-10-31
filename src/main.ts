@@ -21,7 +21,17 @@ function mkAudioTag(url: string, mime?: AudioMIME): HTMLAudioElement {
 function mkLink(url: string): HTMLAnchorElement {
     let link = document.createElement("a");
     link.href = url;
-    link.text = "Link to page";
+
+    let origin = link.origin.split('.');
+    let siteName: string;
+
+    if (origin.length == 3) { // if url of the form www.example.com
+        siteName = origin[1];
+    } else { // if url of the form example.com
+        siteName = origin[0];
+    }
+
+    link.text = "Link to " + siteName;
     return link;
 }
 

@@ -14,7 +14,15 @@ function mkAudioTag(url, mime) {
 function mkLink(url) {
     let link = document.createElement("a");
     link.href = url;
-    link.text = "Link to page";
+    let origin = link.origin.split('.');
+    let siteName;
+    if (origin.length == 3) { // if url of the form www.example.com
+        siteName = origin[1];
+    }
+    else { // if url of the form example.com
+        siteName = origin[0];
+    }
+    link.text = "Link to " + siteName;
     return link;
 }
 for (let wd of data) {
