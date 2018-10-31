@@ -5,11 +5,14 @@ function mkAudioTag(url) {
     audio.controls = true;
     return audio;
 }
-let div = document.getElementById("sound-board");
-let table = document.createElement("table");
+function range(n) {
+    return [...Array(n).keys()];
+}
+const div = document.getElementById("sound-board");
+const table = document.createElement("table");
 for (let wd of data) {
     let tr = document.createElement("tr");
-    for (let col = 0; col < 2; col++) {
+    for (let col of range(2)) {
         let td = document.createElement("td");
         if (col === 0) {
             td.appendChild(document.createTextNode(wd.text));
