@@ -55,5 +55,13 @@ export let data: Array<WebData> = [
     {
         text: "I'm still here",
         url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/9/99/I%27m_still_here.mp3",
+    },
+    {
+        text: "Get zem! Raus! Raus!",
+        url: "https://wiki.teamfortress.com/w/images/6/63/Medic_specialcompleted05.wav",
+    },
+    {
+        text: "Crickets at night",
+        url: "http://soundbible.com/mp3/Summer Crickets Chirping-SoundBible.com-1519333525.mp3",
     }
 ]
