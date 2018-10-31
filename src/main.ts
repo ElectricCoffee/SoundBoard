@@ -1,11 +1,19 @@
-import {data} from "./data.js";
+import {data, AudioMIME, AudioData} from "./data.js";
 
 const div = document.getElementById("sound-board");
 
-function mkAudioTag(url: string): HTMLAudioElement {
-	let audio = document.createElement("audio");
-    audio.src = url;
+function mkAudioTag(url: string, mime?: AudioMIME): HTMLAudioElement {
+    let audio = document.createElement("audio");
+    let source = document.createElement("source");
+
     audio.controls = true;
+    source.src = url;
+
+    if (mime) {
+        source.type = mime;
+    }
+
+    audio.appendChild(source);
 
     return audio; 
 }

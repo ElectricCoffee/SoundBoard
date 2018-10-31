@@ -1,3 +1,4 @@
+export type AudioMIME = "audio/basic" | "audio/mid" | "audio/mpeg" | "audio/x-aiff" | "audio/x-mpegurl" | "audio/x-pn-realaudio" | "audio/x-wav";
 export interface WebData {
     text: string;
     soundFile?: string;

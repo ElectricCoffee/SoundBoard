@@ -1,9 +1,14 @@
 import { data } from "./data.js";
 const div = document.getElementById("sound-board");
-function mkAudioTag(url) {
+function mkAudioTag(url, mime) {
     let audio = document.createElement("audio");
-    audio.src = url;
+    let source = document.createElement("source");
     audio.controls = true;
+    source.src = url;
+    if (mime) {
+        source.type = mime;
+    }
+    audio.appendChild(source);
     return audio;
 }
 for (let wd of data) {
