@@ -4,5 +4,10 @@
         "module": "esnext",
         "sourceMap": true,
         "outDir": "src/build/",
+        "lib": [
+            "es2018",
+            "dom",
+            "dom.iterable",
+        ]
     }
 }
