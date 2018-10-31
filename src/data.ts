@@ -163,7 +163,27 @@ export const data: Array<WebData> = [
         src: "https://www.youtube.com/watch?v=At20FsThT8Y",
     },
     {
-        text: "Octopath Traveler: The Snow Lands",
+        text: "Octopath Traveler: The Frostlands",
         src: "https://www.youtube.com/watch?v=hPQY6J7naE0",
+    },
+    {
+        text: "Octopath Traveler: The Coastlands",
+        src: "https://www.youtube.com/watch?v=FME_gtmjssg",
+    },
+    {
+        text: "Octopath Traveler: Decisive Battle I",
+        src: "https://www.youtube.com/watch?v=D2rlF98Jes8",
+    },
+    {
+        text: "Zelda: Breath of the Wild: Tarrey Town",
+        src: "https://www.youtube.com/watch?v=cECdXHvrmNc",
+    },
+    {
+        text: "Zelda: Majora's Mask: Song of Healing",
+        src: "https://www.youtube.com/watch?v=XDX4ZwUeOok",
+    },
+    {
+        text: "Zelda: Breath of the Wild: Snowy Mountain Shrine",
+        src: "https://www.youtube.com/watch?v=D1p9ZGwaXV0"
     }
 ]
