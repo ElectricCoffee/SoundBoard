@@ -5,3 +5,18 @@ html {
 .center {
     text-align: center;
 }
+
+.grid-container {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.inline {
+    display: inline;
+}
+
+.text {
+    display: inline-block;
+    width: 50%;
+}
