@@ -4,10 +4,12 @@
         "module": "esnext",
         "sourceMap": true,
         "outDir": "src/build/",
+        //"outFile": "src/build/main.js",
         "lib": [
             "es2018",
             "dom",
             "dom.iterable",
-        ]
+        ],
+        "baseUrl": "."
     }
 }

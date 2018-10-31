@@ -14,8 +14,14 @@ for (let wd of data) {
         if (col === 0) {
             td.appendChild(document.createTextNode(wd.text));
         }
-        else if (col === 1) {
-            td.appendChild(mkAudioTag(wd.url));
+        else if (col === 1 && wd.soundFile) {
+            td.appendChild(mkAudioTag(wd.soundFile));
+        }
+        else if (col === 1 && wd.page) {
+            let link = document.createElement("a");
+            link.href = wd.page;
+            link.text = "Link to page";
+            td.appendChild(link);
         }
         tr.appendChild(td);
     }
