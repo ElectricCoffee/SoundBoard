@@ -8,8 +8,8 @@ function mkAudioTag(url: string): HTMLAudioElement {
     return audio; 
 }
 
-let div = document.getElementById("sound-board");
-let table = document.createElement("table");
+const div = document.getElementById("sound-board");
+const table = document.createElement("table");
 
 for (let wd of data) {
     let tr = document.createElement("tr");
@@ -28,7 +28,7 @@ for (let wd of data) {
             
             td.appendChild(link);
         }
-        
+
         tr.appendChild(td);
     }
     

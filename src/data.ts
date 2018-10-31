@@ -4,7 +4,7 @@ export interface WebData {
     page?: string;
 }
 
-export let data: Array<WebData> = [ 
+export const data: Array<WebData> = [ 
     {
         text: "Anyone need some healing?",
         soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/fb/Anyone_need_some_healing.ogg",
