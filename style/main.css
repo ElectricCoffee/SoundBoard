@@ -1,3 +1,7 @@
 html {
     font-family: 'Fira Sans', sans-serif;
 }
+
+.center {
+    text-align: center;
+}
