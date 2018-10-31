@@ -36,14 +36,10 @@ for (let wd of data) {
 
     let soundSource: HTMLAudioElement | HTMLAnchorElement;
 
-    if (wd.soundFile) {
-        soundSource = mkAudioTag(wd.soundFile);
-    } else if (wd.page) {
-        let link = document.createElement("a");
-        link.href = wd.page;
-        link.text = "Link to page";
-        
-        soundSource = link;
+    if (typeof wd.src === "string") {
+        soundSource = mkLink(wd.src);
+    } else {
+        soundSource = mkAudioTag(wd.src.url, wd.src.contentType);
     }
 
     row.appendChild(soundSource);

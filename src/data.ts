@@ -1,73 +1,169 @@
 export type AudioMIME = "audio/basic" | "audio/mid" | "audio/mpeg" | "audio/x-aiff" | "audio/x-mpegurl" | "audio/x-pn-realaudio" | "audio/x-wav";
+
 export interface WebData {
     text: string;
-    soundFile?: string;
-    page?: string;
+    src: string | AudioData;
+}
+
+export interface AudioData {
+    url: string;
+    contentType?: AudioMIME;
 }
 
 export const data: Array<WebData> = [ 
     {
         text: "Anyone need some healing?",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/fb/Anyone_need_some_healing.ogg",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/fb/Anyone_need_some_healing.ogg", 
+        },
     },
     {
         text: "Come here and get stabilised!",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/f9/S76_-_come_here_and_get_stabilized.ogg",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/f9/S76_-_come_here_and_get_stabilized.ogg", 
+        },
     },
     {
         text: "Get over here and heal up!",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/6/64/S76_-_Get_over_here_and_heal_up.wav",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/6/64/S76_-_Get_over_here_and_heal_up.wav", 
+        },
     },
     {
         text: "Everyone, heal up.",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/d/da/Everyone_heal_up.ogg",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/d/da/Everyone_heal_up.ogg", 
+        },
     },
     {
   	    text: "Time to heal up",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/f7/Time_to_heal_up.ogg",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/f7/Time_to_heal_up.ogg", 
+        },
     },
     {
         text: "Team, heal up here",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/8/8d/S76_-_Team%2C_heal_up_here.ogg",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/8/8d/S76_-_Team%2C_heal_up_here.ogg", 
+        },
     },
     {
         text: "Never leave a team-mate behind",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/6/6f/S76_-_Never_leave_a_teammate_behind.ogg"
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/6/6f/S76_-_Never_leave_a_teammate_behind.ogg" 
+        },
     },
     {
         text: "Did someone call a doctor?",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/8/81/Did_someone_call_a_doctor.mp3",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/8/81/Did_someone_call_a_doctor.mp3", 
+        },
     },
     {
         text: "I've got you",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/7/79/I%27ve_got_you.mp3",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/7/79/I%27ve_got_you.mp3", 
+        },
     },
     {
         text: "Patching you up",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/c/c4/Patching_you_up.mp3",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/c/c4/Patching_you_up.mp3", 
+        },
     },
     {
         text: "Let's get you back out there",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/6/66/Let%27s_get_you_back_out_there.mp3",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/6/66/Let%27s_get_you_back_out_there.mp3", 
+        },
     },
     {
         text: "I'm taking care of you",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/f2/I%27m_taking_care_of_you.mp3",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/f2/I%27m_taking_care_of_you.mp3", 
+        },
     },
     {
         text: "I'm still here",
-        soundFile: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/9/99/I%27m_still_here.mp3",
+        src: { 
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/9/99/I%27m_still_here.mp3", 
+        },
     },
     {
         text: "Get zem! Raus! Raus!",
-        soundFile: "https://wiki.teamfortress.com/w/images/6/63/Medic_specialcompleted05.wav",
+        src: { 
+            url: "https://wiki.teamfortress.com/w/images/6/63/Medic_specialcompleted05.wav",
+            contentType: "audio/x-wav"
+        }
     },
     {
         text: "Crickets at night",
-        soundFile: "http://soundbible.com/mp3/Summer Crickets Chirping-SoundBible.com-1519333525.mp3",
+        src: { 
+            url: "http://soundbible.com/mp3/Summer Crickets Chirping-SoundBible.com-1519333525.mp3", 
+        },
+    },
+    {
+        text: "Rimshot",
+        src: { 
+            url: "http://soundbible.com/mp3/Joke Sting-SoundBible.com-1968971319.mp3", 
+        },
+    },
+    {
+        text: "Thanks, mate!",
+        src: { 
+            url: "https://wiki.teamfortress.com/w/images/4/4b/Sniper_thanks01.wav", 
+            contentType: "audio/x-wav",
+        },
+    },
+    {
+        text: "Get bloody going!",
+        src: {
+             url: "https://wiki.teamfortress.com/w/images/1/19/Sniper_go01.wav", 
+             contentType: "audio/x-wav",
+        },
+    },
+    {
+        text: "Incoming (quiet)",
+        src: {
+             url: "https://wiki.teamfortress.com/w/images/9/91/Sniper_incoming04.wav", 
+             contentType: "audio/x-wav",
+        },
+    },
+    {
+        text: "Incoming!",
+        src: {
+             url: "https://wiki.teamfortress.com/w/images/4/4c/Sniper_incoming02.wav", 
+             contentType: "audio/x-wav",
+        },
+    },
+    {
+        text: "Good shot, mate!",
+        src: {
+             url: "https://wiki.teamfortress.com/w/images/9/91/Sniper_niceshot02.wav", 
+             contentType: "audio/x-wav",
+        },
+    },
+    {
+        text: "Oh nooo",
+        src: {
+             url: "https://wiki.teamfortress.com/w/images/6/6b/Heavy_negativevocalization02.wav", 
+             contentType: "audio/x-wav",
+        },
     },
     {
         text: "Octopath Traveler: Victory Theme",
-        page: "https://www.youtube.com/watch?v=jThszYYm8JU",
+        src: "https://www.youtube.com/watch?v=jThszYYm8JU",
     },
+    {
+        text: "Resident Evil 4: Save",
+        src: "https://www.youtube.com/watch?v=zSGPoLCY0xU",
+    },
+    {
+        text: "Octopath Traveler: My Quiet Forest Home",
+        src: "https://www.youtube.com/watch?v=At20FsThT8Y",
+    },
+    {
+        text: "Octopath Traveler: The Snow Lands",
+        src: "https://www.youtube.com/watch?v=hPQY6J7naE0",
+    }
 ]

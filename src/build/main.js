@@ -11,6 +11,12 @@ function mkAudioTag(url, mime) {
     audio.appendChild(source);
     return audio;
 }
+function mkLink(url) {
+    let link = document.createElement("a");
+    link.href = url;
+    link.text = "Link to page";
+    return link;
+}
 for (let wd of data) {
     let row = document.createElement("div");
     row.className = "inline";
@@ -19,14 +25,11 @@ for (let wd of data) {
     span.className = "text";
     row.appendChild(span);
     let soundSource;
-    if (wd.soundFile) {
-        soundSource = mkAudioTag(wd.soundFile);
+    if (typeof wd.src === "string") {
+        soundSource = mkLink(wd.src);
     }
-    else if (wd.page) {
-        let link = document.createElement("a");
-        link.href = wd.page;
-        link.text = "Link to page";
-        soundSource = link;
+    else {
+        soundSource = mkAudioTag(wd.src.url, wd.src.contentType);
     }
     row.appendChild(soundSource);
     div.appendChild(row);
