@@ -18,6 +18,13 @@ function mkAudioTag(url: string, mime?: AudioMIME): HTMLAudioElement {
     return audio; 
 }
 
+function mkLink(url: string): HTMLAnchorElement {
+    let link = document.createElement("a");
+    link.href = url;
+    link.text = "Link to page";
+    return link;
+}
+
 for (let wd of data) {
     let row = document.createElement("div");
     row.className = "inline";
