@@ -127,6 +127,20 @@ export const data = [
         },
     },
     {
+        text: "We did it, mate!",
+        src: {
+            url: "https://wiki.teamfortress.com/w/images/c/c5/Demoman_specialcompleted-assistedkill01.wav",
+            contentType: "audio/x-wav",
+        },
+    },
+    {
+        text: "That'll teach 'em!",
+        src: {
+            url: "https://wiki.teamfortress.com/w/images/6/62/Demoman_autocappedintelligence03.wav",
+            contentType: "audio/x-wav",
+        },
+    },
+    {
         text: "Crickets at night",
         src: {
             url: "http://soundbible.com/mp3/Summer Crickets Chirping-SoundBible.com-1519333525.mp3",
@@ -136,6 +150,33 @@ export const data = [
         text: "Rimshot",
         src: {
             url: "http://soundbible.com/mp3/Joke Sting-SoundBible.com-1968971319.mp3",
+        },
+    },
+    {
+        text: "Grizzly Bear",
+        src: {
+            url: "http://soundbible.com/mp3/Grizzly Bear-SoundBible.com-48557147.mp3",
+        },
+    },
+    {
+        text: "Kookaburra",
+        src: {
+            url: "https://upload.wikimedia.org/wikipedia/commons/c/ca/LaughingKookaburra.ogg",
+            contentType: "application/ogg",
+        },
+    },
+    {
+        text: "Carrion Crow",
+        src: {
+            url: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Carrion_Crow_%28Corvus_corone%29_%28W1CDR0001425_BD18%29.ogg",
+            contentType: "application/ogg",
+        },
+    },
+    {
+        text: "Cuckoo",
+        src: {
+            url: "https://upload.wikimedia.org/wikipedia/commons/0/01/Cuculus_canorus.ogg",
+            contentType: "application/ogg",
         },
     },
     {
