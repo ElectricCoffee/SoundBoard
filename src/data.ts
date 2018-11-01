@@ -1,15 +1,31 @@
+/**
+ * Represents all the valid MIME types for audio.
+ */
 export type AudioMIME = "audio/basic" | "audio/mid" | "audio/mpeg" | "audio/x-aiff" | "audio/x-mpegurl" | "audio/x-pn-realaudio" | "audio/x-wav" | "application/ogg";
 
+/**
+ * Interface that represents the data housing the different sound sources.
+ * @field text - Text describing the sound source
+ * @field src - Either a bare string representing a url, or AudioData, which holds both a url and an optional MIME type
+ */
 export interface WebData {
     text: string;
     src: string | AudioData;
 }
 
+/**
+ * Interface that represents audio files.
+ * @field url - Path to the audio file (typically a web address).
+ * @field contentType - Optional MIME type for the path.
+ */
 export interface AudioData {
     url: string;
     contentType?: AudioMIME;
 }
 
+/**
+ * Array containing all the different sound sources used in the sound board.
+ */
 export const data: Array<WebData> = [ 
     {
         text: "(Soldier: 76) Anyone need some healing?",

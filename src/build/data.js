@@ -1,3 +1,6 @@
+/**
+ * Array containing all the different sound sources used in the sound board.
+ */
 export const data = [
     {
         text: "(Soldier: 76) Anyone need some healing?",
