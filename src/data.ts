@@ -12,141 +12,154 @@ export interface AudioData {
 
 export const data: Array<WebData> = [ 
     {
-        text: "Anyone need some healing?",
+        text: "(Soldier: 76) Anyone need some healing?",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/fb/Anyone_need_some_healing.ogg", 
         },
     },
     {
-        text: "Come here and get stabilised!",
+        text: "(Soldier: 76) Come here and get stabilised!",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/f9/S76_-_come_here_and_get_stabilized.ogg", 
         },
     },
     {
-        text: "Get over here and heal up!",
+        text: "(Soldier: 76) Get over here and heal up!",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/6/64/S76_-_Get_over_here_and_heal_up.wav", 
         },
     },
     {
-        text: "Everyone, heal up.",
+        text: "(Soldier: 76) Everyone, heal up.",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/d/da/Everyone_heal_up.ogg", 
         },
     },
     {
-  	    text: "Time to heal up",
+  	    text: "(Soldier: 76) Time to heal up",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/f7/Time_to_heal_up.ogg", 
         },
     },
     {
-        text: "Team, heal up here",
+        text: "(Soldier: 76) Team, heal up here",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/8/8d/S76_-_Team%2C_heal_up_here.ogg", 
         },
     },
     {
-        text: "Never leave a team-mate behind",
+        text: "(Soldier: 76) Never leave a team-mate behind",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/6/6f/S76_-_Never_leave_a_teammate_behind.ogg" 
         },
     },
     {
-        text: "Did someone call a doctor?",
+        text: "(Mercy) Did someone call a doctor?",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/8/81/Did_someone_call_a_doctor.mp3", 
         },
     },
     {
-        text: "I've got you",
+        text: "(Mercy) I've got you",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/7/79/I%27ve_got_you.mp3", 
         },
     },
     {
-        text: "Patching you up",
+        text: "(Mercy) Patching you up",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/c/c4/Patching_you_up.mp3", 
         },
     },
     {
-        text: "Let's get you back out there",
+        text: "(Mercy) Let's get you back out there",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/6/66/Let%27s_get_you_back_out_there.mp3", 
         },
     },
     {
-        text: "I'm taking care of you",
+        text: "(Mercy) I'm taking care of you",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/f/f2/I%27m_taking_care_of_you.mp3", 
         },
     },
     {
-        text: "I'm still here",
+        text: "(Mercy) I'm still here",
         src: { 
             url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/9/99/I%27m_still_here.mp3", 
         },
     },
     {
-        text: "Get zem! Raus! Raus!",
+        text: "(Mercy) Support has arrived!",
+        src: {
+            url: "https://d1u5p3l4wpay3k.cloudfront.net/overwatch_gamepedia/5/5e/Support_has_arrived.mp3",
+        },
+    },
+    {
+        text: "(Medic) Get zem! Raus! Raus!",
         src: { 
             url: "https://wiki.teamfortress.com/w/images/6/63/Medic_specialcompleted05.wav",
             contentType: "audio/x-wav"
         }
     },
     {
-        text: "Thanks, mate!",
+        text: "(Medic) Did that sting? SORRY!",
+        src: {
+            url: "https://wiki.teamfortress.com/w/images/9/9a/Medic_specialcompleted01.wav",
+            contentType: "audio/x-wav",
+        },
+    },
+    {
+        text: "(Sniper) Thanks, mate!",
         src: { 
             url: "https://wiki.teamfortress.com/w/images/4/4b/Sniper_thanks01.wav", 
             contentType: "audio/x-wav",
         },
     },
     {
-        text: "Get bloody going!",
+        text: "(Sniper) Let's go, mates!",
         src: {
-             url: "https://wiki.teamfortress.com/w/images/1/19/Sniper_go01.wav", 
+             url: "https://wiki.teamfortress.com/w/images/f/fb/Sniper_go02.wav", 
              contentType: "audio/x-wav",
         },
     },
     {
-        text: "Incoming (quiet)",
+        text: "(Sniper) Incoming (quiet)",
         src: {
              url: "https://wiki.teamfortress.com/w/images/9/91/Sniper_incoming04.wav", 
              contentType: "audio/x-wav",
         },
     },
     {
-        text: "Incoming!",
+        text: "(Sniper) Incoming!",
         src: {
              url: "https://wiki.teamfortress.com/w/images/4/4c/Sniper_incoming02.wav", 
              contentType: "audio/x-wav",
         },
     },
     {
-        text: "Good shot, mate!",
+        text: "(Sniper) Good shot, mate!",
         src: {
              url: "https://wiki.teamfortress.com/w/images/9/91/Sniper_niceshot02.wav", 
              contentType: "audio/x-wav",
         },
     },
     {
-        text: "Oh nooo",
+        text: "(Heavy) Oh nooo",
         src: {
              url: "https://wiki.teamfortress.com/w/images/6/6b/Heavy_negativevocalization02.wav", 
              contentType: "audio/x-wav",
         },
     },
     {
-        text: "We did it, mate!",
+        text: "(Demoman) We did it, mate!",
         src: {
             url: "https://wiki.teamfortress.com/w/images/c/c5/Demoman_specialcompleted-assistedkill01.wav",
             contentType: "audio/x-wav",
         },
     },
     {
-        text: "That'll teach 'em!",
+        text: "(Demoman) That'll teach 'em!",
         src: {
             url: "https://wiki.teamfortress.com/w/images/6/62/Demoman_autocappedintelligence03.wav",
             contentType: "audio/x-wav",
