@@ -1,6 +1,6 @@
 import { data } from "./data.js";
 const div = document.getElementById("sound-board");
-function mkAudioTag(url, mime) {
+function mkAudio(url, mime) {
     let audio = document.createElement("audio");
     let source = document.createElement("source");
     audio.controls = true;
@@ -17,7 +17,7 @@ function stripURL(url) {
     siteComponents.pop(); // pop the TLD
     return siteComponents.pop(); // pop and return the domain
 }
-function mkLink(url) {
+function mkAnchor(url) {
     let link = document.createElement("a");
     link.href = url;
     let siteName = stripURL(link);
@@ -33,10 +33,10 @@ for (let wd of data) {
     row.appendChild(span);
     let soundSource;
     if (typeof wd.src === "string") {
-        soundSource = mkLink(wd.src);
+        soundSource = mkAnchor(wd.src);
     }
     else {
-        soundSource = mkAudioTag(wd.src.url, wd.src.contentType);
+        soundSource = mkAudio(wd.src.url, wd.src.contentType);
     }
     row.appendChild(soundSource);
     div.appendChild(row);

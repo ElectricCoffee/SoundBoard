@@ -2,7 +2,7 @@ import {data, AudioMIME, AudioData} from "./data.js";
 
 const div = document.getElementById("sound-board");
 
-function mkAudioTag(url: string, mime?: AudioMIME): HTMLAudioElement {
+function mkAudio(url: string, mime?: AudioMIME): HTMLAudioElement {
     let audio = document.createElement("audio");
     let source = document.createElement("source");
 
@@ -26,7 +26,7 @@ function stripURL(url: HTMLHyperlinkElementUtils): string {
     return siteComponents.pop(); // pop and return the domain
 }
 
-function mkLink(url: string): HTMLAnchorElement {
+function mkAnchor(url: string): HTMLAnchorElement {
     let link = document.createElement("a");
     link.href = url;
 
@@ -48,9 +48,9 @@ for (let wd of data) {
     let soundSource: HTMLAudioElement | HTMLAnchorElement;
 
     if (typeof wd.src === "string") {
-        soundSource = mkLink(wd.src);
+        soundSource = mkAnchor(wd.src);
     } else {
-        soundSource = mkAudioTag(wd.src.url, wd.src.contentType);
+        soundSource = mkAudio(wd.src.url, wd.src.contentType);
     }
 
     row.appendChild(soundSource);
