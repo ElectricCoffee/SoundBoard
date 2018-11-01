@@ -36,13 +36,20 @@ function mkAnchor(url: string): HTMLAnchorElement {
     return link;
 }
 
+// creates a span with associated text and class
+function mkSpan(text: string): HTMLSpanElement {
+    let span = document.createElement("span");
+    span.innerText = text;
+    span.className = "text";
+    return span;
+}
+
+// iterate over the data set and populate the grid
 for (let wd of data) {
     let row = document.createElement("div");
     row.className = "grid-row";
     
-    let span = document.createElement("span");
-    span.innerText = wd.text;
-    span.className = "text";
+    let span = mkSpan(wd.text);
     row.appendChild(span);
 
     let soundSource: HTMLAudioElement | HTMLAnchorElement;
