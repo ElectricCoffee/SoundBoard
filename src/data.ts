@@ -97,18 +97,6 @@ export const data: Array<WebData> = [
         }
     },
     {
-        text: "Crickets at night",
-        src: { 
-            url: "http://soundbible.com/mp3/Summer Crickets Chirping-SoundBible.com-1519333525.mp3", 
-        },
-    },
-    {
-        text: "Rimshot",
-        src: { 
-            url: "http://soundbible.com/mp3/Joke Sting-SoundBible.com-1968971319.mp3", 
-        },
-    },
-    {
         text: "Thanks, mate!",
         src: { 
             url: "https://wiki.teamfortress.com/w/images/4/4b/Sniper_thanks01.wav", 
@@ -148,6 +136,18 @@ export const data: Array<WebData> = [
         src: {
              url: "https://wiki.teamfortress.com/w/images/6/6b/Heavy_negativevocalization02.wav", 
              contentType: "audio/x-wav",
+        },
+    },
+    {
+        text: "Crickets at night",
+        src: { 
+            url: "http://soundbible.com/mp3/Summer Crickets Chirping-SoundBible.com-1519333525.mp3", 
+        },
+    },
+    {
+        text: "Rimshot",
+        src: { 
+            url: "http://soundbible.com/mp3/Joke Sting-SoundBible.com-1968971319.mp3", 
         },
     },
     {
