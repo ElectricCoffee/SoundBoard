@@ -1,4 +1,4 @@
-import {data, AudioMIME, AudioData} from "./data.js";
+import {data, AudioMIME} from "./data.js";
 
 const div = document.getElementById("sound-board");
 
