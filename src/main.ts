@@ -35,10 +35,7 @@ function stripURL(url: HTMLHyperlinkElementUtils): string {
 function mkAnchor(url: string): HTMLAnchorElement {
     let link = document.createElement("a");
     link.href = url;
-
-    let siteName = stripURL(link);
-
-    link.text = "Link to " + siteName;
+    link.text = "Link to " + stripURL(link);
     return link;
 }
 
