@@ -18,18 +18,19 @@ function mkAudioTag(url: string, mime?: AudioMIME): HTMLAudioElement {
     return audio; 
 }
 
+function stripURL(url: HTMLHyperlinkElementUtils): string {
+    let regex = /https?:\/\//gi;
+    let siteComponents = url.origin.replace(regex, "").split('.');
+
+    siteComponents.pop(); // pop the TLD
+    return siteComponents.pop(); // pop and return the domain
+}
+
 function mkLink(url: string): HTMLAnchorElement {
     let link = document.createElement("a");
     link.href = url;
 
-    let origin = link.origin.split('.');
-    let siteName: string;
-
-    if (origin.length == 3) { // if url of the form www.example.com
-        siteName = origin[1];
-    } else { // if url of the form example.com
-        siteName = origin[0];
-    }
+    let siteName = stripURL(link);
 
     link.text = "Link to " + siteName;
     return link;
