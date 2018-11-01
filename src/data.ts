@@ -185,5 +185,13 @@ export const data: Array<WebData> = [
     {
         text: "Zelda: Breath of the Wild: Snowy Mountain Shrine",
         src: "https://www.youtube.com/watch?v=D1p9ZGwaXV0"
+    },
+    {
+        text: "Zelda: Breath of the Wild: Sheikah Tower",
+        src: "https://www.youtube.com/watch?v=mGVsWJcZeTc",
+    },
+    {
+        text: "Music Box, Harp, & Hammered Dulcimer",
+        src: "https://wintergatan.bandcamp.com/track/music-box-harp-hammered-dulcimer",
     }
 ]
